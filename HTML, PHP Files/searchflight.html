@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Flight</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li class="active"><a href="#">Search Flight</a></li>
+			<li><a href="homepage.html">Home</a></li>
+		</ul>
+	</nav>
+	<div class="hero">
+		<h1>SEARCH FLIGHT</h1>
+	</div>
+	<div class="form-container">
+		<form action="searchflight.php" method="post" onsubmit="showLoading('Searching for flights...')">
+			<div class="form-group">
+				<label for="source">Source</label>
+				<input type="text" id="source" name="source" placeholder="Enter source city" required>
+			</div>
+			<div class="form-group">
+				<label for="destination">Destination</label>
+				<input type="text" id="destination" name="destination" placeholder="Enter destination city" required>
+			</div>
+			<div class="form-group">
+				<label for="date">Date of Travel</label>
+				<input type="date" id="date" name="date" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Search Flights</button>
+		</form>
+	</div>
+	<script src="theme-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modify Tickets</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li class="active"><a href="#">Modify Tickets</a></li>
+			<li><a href="homepage.html">Home</a></li>
+		</ul>
+	</nav>
+	<div class="hero">
+		<h1>MODIFY TICKETS</h1>
+	</div>
+	<div class="form-container">
+		<form action="modifypassengerdetailsview.php" method="POST" onsubmit="showLoading('Loading passenger details...')">
+			<div class="form-group">
+				<label for="passportno">Passport Number (8 characters)</label>
+				<input type="text" id="passportno" name="passportno" placeholder="e.g., AB123456" maxlength="8" required>
+			</div>
+			<div class="form-group">
+				<label for="ticketnumber">Ticket Number</label>
+				<input type="number" id="ticketnumber" name="ticketnumber" placeholder="Enter ticket number" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Load Details</button>
+		</form>
+	</div>
+	<script src="theme-toggle.js"></script>
+</body>
+</html>

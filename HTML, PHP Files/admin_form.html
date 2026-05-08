@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Flight Details</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li class="active"><a href="#">Add Flights</a></li>
+			<li><a href='airlinescode.php'>Airlines ID (Reference)</a></li>
+			<li><a href='homepage.html'>Home</a></li>
+		</ul>
+	</nav>
+	<div class="hero">
+		<h1>Flight Details</h1>
+	</div>
+	<div class="form-container">
+		<form action="postadmindetails.php" method="post" onsubmit="showLoading('Adding flight...')">
+			<div class="form-group">
+				<label for="flightcode">Flight Code (10 characters)</label>
+				<input type="text" id="flightcode" name="flightcode" placeholder="e.g., AI12345678" required>
+			</div>
+			<div class="form-group">
+				<label for="airlinesid">Airline ID</label>
+				<input type="text" id="airlinesid" name="airlinesid" placeholder="e.g., AI" required>
+			</div>
+			<div class="form-group">
+				<label for="country">Country</label>
+				<input type="text" id="country" name="country" placeholder="Country" required>
+			</div>
+			<div class="form-group">
+				<label for="state">State</label>
+				<input type="text" id="state" name="state" placeholder="State" required>
+			</div>
+			<div class="form-group">
+				<label for="airportname">Airport Name</label>
+				<input type="text" id="airportname" name="airportname" placeholder="Airport Name" required>
+			</div>
+			<div class="form-group">
+				<label for="source">Source City</label>
+				<input type="text" id="source" name="source" placeholder="Source" required>
+			</div>
+			<div class="form-group">
+				<label for="destination">Destination City</label>
+				<input type="text" id="destination" name="destination" placeholder="Destination" required>
+			</div>
+			<div class="form-group">
+				<label for="departure">Departure Time</label>
+				<input type="text" id="departure" name="departure" placeholder="e.g., 10:00 AM" required>
+			</div>
+			<div class="form-group">
+				<label for="arrival">Arrival Time</label>
+				<input type="text" id="arrival" name="arrival" placeholder="e.g., 02:00 PM" required>
+			</div>
+			<div class="form-group">
+				<label for="duration">Duration</label>
+				<input type="text" id="duration" name="duration" placeholder="e.g., 4h" required>
+			</div>
+			<div class="form-group">
+				<label for="date">Flight Date</label>
+				<input type="date" id="date" name="date" required>
+			</div>
+			<h3 style="margin: 20px 0; color: var(--text-primary);">Pricing</h3>
+			<div class="form-group">
+				<label for="economyclass">Economy Class Price</label>
+				<input type="number" id="economyclass" name="economyclass" placeholder="0.00" step="0.01" required>
+			</div>
+			<div class="form-group">
+				<label for="businessclass">Business Class Price</label>
+				<input type="number" id="businessclass" name="businessclass" placeholder="0.00" step="0.01" required>
+			</div>
+			<div class="form-group">
+				<label for="students">Student Price</label>
+				<input type="number" id="students" name="students" placeholder="0.00" step="0.01" required>
+			</div>
+			<div class="form-group">
+				<label for="diff">Differently Abled Price</label>
+				<input type="number" id="diff" name="diff" placeholder="0.00" step="0.01" required>
+			</div>
+			<button type="submit" class="btn btn-success">Add Flight</button>
+		</form>
+	</div>
+	<script src="theme-toggle.js"></script>
+</body>
+</html>

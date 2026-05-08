@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Passenger Details</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li class="active"><a href="#">Passenger Details</a></li>
+		</ul>
+	</nav>
+	<div class="hero">
+		<h1>PASSENGER DETAILS</h1>
+	</div>
+	<div class="form-container">
+		<form action="postpassengerdetails.php" method="post" onsubmit="showLoading('Processing booking...')">
+			<div class="form-group">
+				<label for="firstname">First Name</label>
+				<input type="text" id="firstname" name="firstname" placeholder="Enter first name" required>
+			</div>
+			<div class="form-group">
+				<label for="middlename">Middle Name (Optional)</label>
+				<input type="text" id="middlename" name="middlename" placeholder="Enter middle name">
+			</div>
+			<div class="form-group">
+				<label for="lastname">Last Name</label>
+				<input type="text" id="lastname" name="lastname" placeholder="Enter last name" required>
+			</div>
+			<div class="form-group">
+				<label for="passportnumber">Passport Number (8 characters)</label>
+				<input type="text" id="passportnumber" name="passportnumber" placeholder="e.g., AB123456" maxlength="8" required>
+			</div>
+			<div class="form-group">
+				<label for="age">Age</label>
+				<input type="number" id="age" name="age" placeholder="Enter age" min="1" max="120" required>
+			</div>
+			<div class="form-group">
+				<label for="sex">Sex (M/F/O)</label>
+				<input type="text" id="sex" name="sex" placeholder="M, F, or O" maxlength="1" required>
+			</div>
+			<div class="form-group">
+				<label for="phonenumber">Phone Number (10 digits)</label>
+				<input type="text" id="phonenumber" name="phonenumber" placeholder="e.g., 1234567890" maxlength="10" required>
+			</div>
+			<div class="form-group">
+				<label for="address">Address</label>
+				<input type="text" id="address" name="address" placeholder="Enter address" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit Booking</button>
+		</form>
+	</div>
+	<script src="theme-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modify Flights</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li class="active"><a href="#">Modify Flights</a></li>
+			<li><a href="homepage.html">Home</a></li>
+		</ul>
+	</nav>
+	<div class="hero">
+		<h1>MODIFY FLIGHTS</h1>
+	</div>
+	<div class="form-container">
+		<form action="modifyadmindetailsview.php" method="POST" onsubmit="showLoading('Loading flight details...')">
+			<div class="form-group">
+				<label for="flightcode">Flight Code (10 characters)</label>
+				<input type="text" id="flightcode" name="flightcode" placeholder="e.g., AI12345678" maxlength="10" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Load Flight</button>
+		</form>
+	</div>
+	<script src="theme-toggle.js"></script>
+</body>
+</html>
